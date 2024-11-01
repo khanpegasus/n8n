@@ -9,6 +9,7 @@ fi
 if [ "$#" -gt 0 ]; then
   # Got started with arguments
   exec n8n "$@"
+	exec n8n start --port=${PORT:-8080}
 else
   # Got started without arguments
   exec n8n
